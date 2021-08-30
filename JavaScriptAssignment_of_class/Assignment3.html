@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <title>cunstructor example</title>
+</head>
+
+<body>
+    <script>
+        class Employee {
+            constructor() {
+                this.empId;
+                this.empName;
+                this.salary;
+                this.totalIncomeTax;
+                this.inHandSalary;
+            }
+
+            getData() {
+                this.empName = prompt("Enter Id Of Employee");
+                this.empName = prompt("Enter Name Of Employee");
+                this.salary = prompt("Enter salary Of Employee");
+            }
+
+            calculateData() {
+                this.totalIncomeTax = ((this.salary / 100) * 10);
+                this.inHandSalary = this.salary - this.totalIncomeTax;
+            }
+
+            displayData() {
+                document.write("<br>");
+                document.write("Employee details with salary and incometax:<br><br>");
+                document.write("Employee Id :" + this.empId + "<br>");
+                document.write("Employee Name :" + this.empName + "<br>");
+                document.write("Total Salary :" + this.salary + "<br>");
+                document.write("Total IncomeTax :" + this.totalIncomeTax + "<br>");
+                document.write("Total In Hand Salary :" + this.inHandSalary + "<br>");
+            }
+
+
+        }
+
+        var emp1 = new Employee();
+        emp1.getData();
+        emp1.calculateData();
+        emp1.displayData();
+    </script>
+</body>
+
+</html>

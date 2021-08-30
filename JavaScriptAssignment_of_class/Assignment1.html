@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Class and object</title>
+</head>
+
+<body>
+    <script>
+        class Employee {
+            constructor(id, name) {
+                this.id = id;
+                this.name = name;
+            }
+            detail() {
+                document.write(this.id + " " + this.name + "<br>")
+            }
+
+        }
+        var e1 = new Employee(1, "Kanchan Kumari");
+        var e2 = new Employee(2, "Sonia Kumari");
+        e1.detail();
+        e2.detail();
+    </script>
+</body>
+
+</html>
